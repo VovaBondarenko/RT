@@ -1,0 +1,57 @@
+---
+scene:
+  velocity: 8
+
+cameras:
+  - camera:
+    pos: {x: 0, y: 0, z: -4}
+    dir: {x: 0, y: 0, z: 0}
+    fov: 110
+    supersampling: 1
+
+lights:
+  - light:
+      type: POINT
+      scale: 1
+    pos: {x: -2, y: 3, z: 5}
+    intensity: 2
+    attenuation: 0.0075
+      shadow: HARD
+
+objects:
+  - object:
+    type: SPHERE
+    scale: 2
+    pos: {x: 0, y: -2, z: 10}
+    dir: {x: 0, y: 1, z: 0}
+    material:
+      ambient: 0.125
+      diffuse: 0.175
+      specular: 0.4
+      shininess: 1024
+  - object:
+    type: CYLINDER
+    scale: 2
+    pos: {x: -7, y: 0, z: 7}
+    dir: {x: 1, y: 1, z: 0}
+    material:
+      color: 0xf98b16
+      ambient: 0.125
+      diffuse: 0.775
+  - object:
+        type: CONE
+        pos: {x: 0, y: 0, z: 10}
+        scale: 0.6
+    material:
+      color: 0x7F00FF
+      diffuse: 0.875
+  - object:
+    type: PLANE
+    scale: 1
+    pos: {x: 0, y: 0, z: 20}
+    dir: {x: 0, y: 0, z: -1}
+    material:
+      color: 0x00FFFF
+      ambient: 0.075
+      diffuse: 0.875
+...

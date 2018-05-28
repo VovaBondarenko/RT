@@ -1,0 +1,88 @@
+---
+scene:
+  velocity: 8
+  recursion_reflect: 1
+  refract: 1
+
+cameras:
+  - camera:
+    pos: {x: 0, y: 0, z: -4}
+    dir: {x: 0, y: 0, z: 0}
+    fov: 80
+    supersampling: 1
+    # invert: 0
+    # scale: 1
+
+lights:
+  - light:
+    type: POINT
+    pos: {x: 0, y: 1, z: 3}
+    color: #F4F2EC
+    intensity: 1.2
+    attenuation: 0.001
+    shadow: HARD
+
+objects:
+  - object:
+    type: SPHERE
+    scale: 1
+    pos: {x: -2, y: 0, z: 11}
+    dir: {x: 0, y: 1, z: 0}
+    material:
+      color: #FFFFFF
+      ambient: 0.125
+      diffuse: 0.875
+      specular: 0.9
+      shininess: 512
+      reflect: 0.1
+      refract: 0
+      transparency: 0
+      absorbtion: 0
+          texture: MARBLE
+  - object:
+    type: SPHERE
+    scale: 2
+    pos: {x: 2, y: 0, z: 11}
+    dir: {x: 0, y: 1, z: 0}
+    material:
+      color: #F43F6A
+      ambient: 0.125
+      diffuse: 0.775
+      specular: 0.4
+      shininess: 1024
+      reflect: 0
+      refract: 0
+      transparency: 0
+      absorbtion: 0
+          texture: CHECKER
+  - object:
+    type: SPHERE
+    scale: 3
+    pos: {x: 0, y: -3, z: 11}
+    dir: {x: 0, y: 1, z: 0}
+    material:
+      ambient: 0.125
+      diffuse: 0.775
+      specular: 0.4
+      shininess: 1024
+      reflect: 0
+      refract: 0
+      transparency: 0
+      absorbtion: 0
+          texture: WOOD
+  - object:
+    type: PLANE
+    scale: 1
+    pos: {x: 0, y: 0, z: 20}
+    dir: {x: 0, y: 0, z: -1}
+    material:
+      color: 0xE2E2D1
+      ambient: 0.075
+      diffuse: 0.875
+      specular: 0.8
+      shininess: 512
+      reflect: 0
+      refract: 0
+      transparency: 0
+      absorbtion: 0
+...

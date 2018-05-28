@@ -1,0 +1,30 @@
+---
+scene:
+  velocity: 8
+  recursion_reflect: 0
+  refract: 0
+
+cameras:
+  - camera:
+    pos: {x: 0, y: 0, z: 0}
+    dir: {x: 0, y: 0, z: 0}
+    fov: 60
+    supersampling: 1
+
+lights:
+  - light:
+    type: POINT
+    pos: {x: 0, y: 3, z: 7}
+    color: 0xffffff
+    intensity: 20.0
+    shadow: HARD
+
+objects:
+   - object:
+        type: CUBE_HOLE
+        pos: {x: 0, y: 0, z: 15}
+        rot: {x: 45, y: 45, z: 45}
+        scale: 11.8
+        material:
+            color: 0xc95eff
+...

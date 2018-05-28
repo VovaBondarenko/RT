@@ -1,0 +1,37 @@
+---
+scene:
+	velocity: 8
+	recursion_reflect: 0
+	refract: 0
+
+cameras:
+	- camera:
+	  pos: {x: 0, y: 0, z: 0}
+	  dir: {x: 0, y: 0, z: 0}
+	  fov: 80
+	  supersampling: 1
+
+lights:
+	- light:
+	  type: POINT
+	  pos: {x: 5, y: -2, z: 5}
+	  color: 0xFFFFFF
+	  intensity: 40.0
+	  shadow: HARD
+
+objects:
+	- object:
+	  type: SPHERE
+	  scale: 2
+	  pos: {x: 0, y: 0, z: 16}
+	  dir: {x: 0, y: 0, z: 1}
+	  material:
+		  color: 0xf90404
+	- object:
+	  type: PLANE
+	  scale: 1
+	  pos: {x: 0, y: 0, z: 20}
+	  dir: {x: 0, y: 0, z: -1}
+	  material:
+		  color: 0xE2E2D1
+...

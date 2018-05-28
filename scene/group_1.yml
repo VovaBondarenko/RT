@@ -1,0 +1,69 @@
+---
+scene:
+	velocity: 8
+	recursion_reflect: 0
+	refract: 0
+
+cameras:
+	- camera:
+	  pos: {x: 0, y: 0, z: 0}
+	  dir: {x: 0, y: 0, z: 0}
+	  fov: 80
+	  supersampling: 1
+
+lights:
+	- light:
+	  type: POINT
+	  pos: {x: 6, y: 2, z: 3}
+	  color: 0xFFFFFF
+	  intensity: 3.0
+      attenuation: 0.002
+	  shadow: HARD
+
+objects:
+	- object:
+	  type: SPHERE
+	  scale: 1
+	  pos: {x: -0.7, y: 0, z: 10}
+	  dir: {x: 0, y: 0, z: 1}
+	  material:
+		  color: 0xFF0000
+		  ambient: 0.225
+		  diffuse: 0.775
+		  specular: 2
+		  shininess: 700
+		  reflect: 0.1
+		  refract: 0
+		  transparency: 0
+		  absorbtion: 1
+	- object:
+	  type: SPHERE
+	  scale: 1
+	  pos: {x: 0, y: 1, z: 10}
+	  dir: {x: 0, y: 0, z: 1}
+	  material:
+		  color: 0x00FF00
+		  ambient: 0.225
+		  diffuse: 0.775
+		  specular: 2
+		  shininess: 700
+		  reflect: 0.1
+		  refract: 0
+		  transparency: 0
+		  absorbtion: 1
+	- object:
+	  type: SPHERE
+	  scale: 1
+	  pos: {x: 0.7, y: 0, z: 10}
+	  dir: {x: 0, y: 0, z: 1}
+	  material:
+		  color: 0x0000FF
+		  ambient: 0.125
+		  diffuse: 0.775
+		  specular: 2
+		  shininess: 700
+		  reflect: 0.1
+		  refract: 0
+		  transparency: 0
+		  absorbtion: 1
+...

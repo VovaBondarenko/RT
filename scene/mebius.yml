@@ -1,0 +1,46 @@
+---
+scene:
+  velocity: 8
+  recursion_reflect: 0
+  refract: 0
+
+cameras:
+  - camera:
+    pos: {x: 0, y: 0, z: 0}
+    dir: {x: 0, y: 0, z: 0}
+    fov: 60
+    supersampling: 1
+
+lights:
+  - light:
+    type: POINT
+    pos: {x: 2, y: 0, z: 0}
+    color: 0xffffff
+    intensity: 20.0
+    shadow: HARD
+
+objects:
+   - object:
+        type: MOEBIUS
+        pos: {x: 0, y: 1, z: 7}
+        rot: {x: 45, y: 45, z: 0}
+        scale: 1
+        max: 0.5
+        material:
+            color: 0x7F00FF
+  - object:
+    type: PLANE
+    scale: 1
+    pos: {x: 0, y: 0, z: 20}
+    dir: {x: 0, y: 0, z: -1}
+    material:
+      color: 0xE2E2D1
+      ambient: 0.075
+      diffuse: 0.875
+      specular: 0.8
+      shininess: 512
+      reflect: 0
+      refract: 0
+      transparency: 0
+      absorbtion: 0
+...
